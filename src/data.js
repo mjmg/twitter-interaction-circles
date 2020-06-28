@@ -161,6 +161,7 @@ module.exports = async function getInteractions(screen_name, layers) {
 	result.push(head.splice(0, layers[0]));
 	result.push(head.splice(0, layers[1]));
 	result.push(head.splice(0, layers[2]));
+	result.push(head.splice(0, layers[3]));
 
 	return result;
 };

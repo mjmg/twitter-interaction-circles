@@ -3,3 +3,5 @@ node_modules/
 .env
 yarn-error.log
 users.txt
+package-lock.json
+yarn.lock

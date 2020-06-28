@@ -14,14 +14,14 @@ const toRad = (x) => x * (Math.PI / 180);
  * @returns {Promise<void>}
  */
 module.exports = async function render(config) {
-	const width = 1000;
-	const height = 1000;
+	const width = 1200;
+	const height = 1200;
 
 	const canvas = createCanvas(width, height);
 	const ctx = canvas.getContext("2d");
 
 	// fill the background
-	ctx.fillStyle = "#C5EDCE";
+	ctx.fillStyle = process.env.CANVAS_BG;
 	ctx.fillRect(0, 0, width, height);
 
 	// loop over the layers

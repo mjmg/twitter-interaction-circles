@@ -9,9 +9,16 @@ The concept is easy and straightforward but the realization encompasses a lot of
 
 You can read more about the realization of this project on the [HackerTyper Blog](https://blog.hackertyper.net/post/twitter-interaction-circles-guide/)
 
+This a fork of the original by @Duiker101. This one lists the maximum 100 users allowed and an additional circle layer.
+Avatar radius, distance from center have been adjusted for optimal spacing.
+
+## Pre-requisites
+
+Updated NodeJS. OS default version may be too obsolete to run this code.
+
 ## Installation
 ```shell script
-git clone git@github.com:duiker101/twitter-interaction-circle.git
+git clone <repo>
 cd twitter-interaction-circle
 yarn install
 ```
@@ -37,11 +44,13 @@ More information about Twitter's bearer tokens can be found [here](https://devel
 Once you have your consumer keys, rename the `.env.example` file `.env` and put them in there, it should look like this:
 
 ```dotenv
+USERNAME="<username>"
+CANVAS_BG="#XXXXXX"
 CONSUMER_KEY=AAAA
 CONSUMER_SECRET=BBBBBB
 ```
 
-Make sure you don't have spaces.
+Type the target username and desired background color. Make sure you don't have spaces in the keys. 
 
 ## Modifications
 

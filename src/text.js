@@ -9,7 +9,7 @@ async function renderText(data) {
 	let output = "";
 
 	// loop over each layer and add a header for the current one
-	for (let i = 1; i < 4; i++) {
+	for (let i = 1; i < 5; i++) {
 		const layer = data[i - 1];
 		output += "---- Circle " + i + " ---- \n";
 
